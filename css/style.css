@@ -1,0 +1,32 @@
+:root{
+  --bg:#f4f8fb; --card:#fff; --ink:#13202b; --muted:#587080;
+  --brand:#0b5d86; --accent:#f08a00; --line:#dde7ee;
+}
+*{box-sizing:border-box;margin:0}
+body{font-family:system-ui,-apple-system,Segoe UI,Roboto,sans-serif;background:var(--bg);color:var(--ink);line-height:1.55}
+.demo{background:#fff3bf;color:#5c4a00;text-align:center;font-size:.85rem;padding:.5rem 1rem;border-bottom:1px solid #f0d96b}
+header{background:var(--brand);color:#fff}
+.wrap{max-width:960px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:16px 0}
+.logo{font-weight:800;font-size:1.35rem;letter-spacing:.3px}
+.logo span{color:#ffc266}
+nav a.tel{color:#fff;text-decoration:none;font-weight:600;border:1px solid rgba(255,255,255,.55);padding:8px 14px;border-radius:999px;font-size:.95rem}
+.hero{padding:48px 0 64px}
+.hero h1{font-size:clamp(1.9rem,5vw,2.8rem);line-height:1.15;max-width:19ch}
+.hero p{margin-top:14px;max-width:48ch;color:#cfe6f2;font-size:1.05rem}
+.btn{display:inline-block;margin-top:24px;background:var(--accent);color:#1b1200;text-decoration:none;font-weight:800;padding:14px 24px;border-radius:10px}
+.badge{display:inline-block;margin-top:22px;margin-left:12px;color:#fff;font-size:.95rem}
+section{padding:44px 0}
+h2{font-size:1.5rem;margin-bottom:20px}
+.grid{display:grid;gap:16px;grid-template-columns:repeat(auto-fit,minmax(220px,1fr))}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:22px}
+.card h3{font-size:1.05rem;margin-bottom:6px}
+.card p{color:var(--muted);font-size:.95rem}
+.note{font-size:.8rem;color:var(--muted);margin-top:12px}
+.note--tight{margin-top:8px}
+.two{display:grid;gap:20px;grid-template-columns:repeat(auto-fit,minmax(280px,1fr))}
+.map{background:#dbe7ef;border-radius:14px;min-height:200px;display:flex;align-items:center;justify-content:center;color:var(--muted);text-align:center;padding:20px}
+.urgent{background:var(--card);border:2px solid var(--accent);border-radius:14px;padding:22px;text-align:center}
+.urgent strong{display:block;font-size:1.2rem;margin-bottom:4px}
+.urgent a{color:var(--brand);font-weight:700}
+footer{background:#083a54;color:#b8d2e0;text-align:center;padding:24px 20px;font-size:.85rem}
